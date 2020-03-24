@@ -29,7 +29,7 @@
                 Due to the current situation of the colonia virus epidemic (Covid-19), I created a page to track the
                 number of patients, infected people, and the dead. For the benefit of myself and others Will be aware of
                 the dangers of the virus (Covid-19)</p>
-                <p id="test"></p>
+            <p id="test"></p>
         </div>
         <div class="card mt-3">
             <div class="card-header text-center">
@@ -107,89 +107,104 @@
                 </div>
             </div>
         </div>
-        <div class="card mt-3">
-            <div class="card-header">
-                <h5 class="text-center">Cases By Country</h5>
-            </div>
-            <div class="card-body">
-                <div class="card-subtitle">
-                    <h6>
-                        <svg class="feather" style="width:15px;">
-                            <use xlink:href="feather_icon/feather-sprite.svg#hash" />
-                        </svg> <span>top</span>
-                    </h6>
-                    <h6>
-                        <svg class="feather" style="width:15px;">
-                            <use xlink:href="feather_icon/feather-sprite.svg#globe" />
-                        </svg> <span>country name</span>
-                    </h6>
-                    <h6>
-                        <svg class="feather" style="width:15px;">
-                            <use xlink:href="feather_icon/feather-sprite.svg#clipboard" />
-                        </svg> <span>cases</span>
-                    </h6>
-                    <h6>
-                        <svg class="feather" style="width:15px;">
-                            <use xlink:href="feather_icon/feather-sprite.svg#user-x" />
-                        </svg> <span>deaths</span>
-                    </h6>
-                    <h6>
-                        <svg class="feather" style="width:15px;">
-                            <use xlink:href="feather_icon/feather-sprite.svg#alert-circle" />
-                        </svg> <span>serious critical</span>
-                    </h6>
-                    <h6>
-                        <svg class="feather" style="width:15px;">
-                            <use xlink:href="feather_icon/feather-sprite.svg#refresh-cw" />
-                        </svg> <span>total recovered</span>
-                    </h6>
+        <div class="accordion mt-3 " id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0 text-center">
+                        <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Cases By Country
+                        </a>
+                    </h5>
                 </div>
-                <div class="mt-3 text-center">
-                    <table class="table table-hover table-borderless table-responsive-sm table-responsive-md"
-                        id="countries_stat">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">
-                                    <svg class="feather">
-                                        <use xlink:href="feather_icon/feather-sprite.svg#hash" />
-                                    </svg>
-                                </th>
-                                <th scope="col">
-                                    <svg class="feather">
-                                        <use xlink:href="feather_icon/feather-sprite.svg#globe" />
-                                    </svg>
-                                </th>
-                                <th scope="col">
-                                    <svg class="feather">
-                                        <use xlink:href="feather_icon/feather-sprite.svg#clipboard" />
-                                    </svg>
-                                </th>
-                                <th scope="col">
-                                    <svg class="feather">
-                                        <use xlink:href="feather_icon/feather-sprite.svg#user-x" />
-                                    </svg>
-                                </th>
-                                <th scope="col">
-                                    <svg class="feather">
-                                        <use xlink:href="feather_icon/feather-sprite.svg#alert-circle" />
-                                    </svg>
-                                </th>
-                                <th scope="col">
-                                    <svg class="feather">
-                                        <use xlink:href="feather_icon/feather-sprite.svg#refresh-cw" />
-                                    </svg>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="card-subtitle">
+                            <h6>
+                                <svg class="feather" style="width:15px;">
+                                    <use xlink:href="feather_icon/feather-sprite.svg#hash" />
+                                </svg> <span>top</span>
+                            </h6>
+                            <h6>
+                                <svg class="feather" style="width:15px;">
+                                    <use xlink:href="feather_icon/feather-sprite.svg#globe" />
+                                </svg> <span>country name</span>
+                            </h6>
+                            <h6>
+                                <svg class="feather" style="width:15px;">
+                                    <use xlink:href="feather_icon/feather-sprite.svg#clipboard" />
+                                </svg> <span>cases</span>
+                            </h6>
+                            <h6>
+                                <svg class="feather" style="width:15px;">
+                                    <use xlink:href="feather_icon/feather-sprite.svg#user-x" />
+                                </svg> <span>deaths</span>
+                            </h6>
+                            <h6>
+                                <svg class="feather" style="width:15px;">
+                                    <use xlink:href="feather_icon/feather-sprite.svg#alert-circle" />
+                                </svg> <span>serious critical</span>
+                            </h6>
+                            <h6>
+                                <svg class="feather" style="width:15px;">
+                                    <use xlink:href="feather_icon/feather-sprite.svg#refresh-cw" />
+                                </svg> <span>total recovered</span>
+                            </h6>
+                        </div>
+                        <div class="mt-3 text-center">
+                            <table class="table table-hover table-borderless table-responsive-sm table-responsive-md"
+                                id="countries_stat">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">
+                                            <svg class="feather">
+                                                <use xlink:href="feather_icon/feather-sprite.svg#hash" />
+                                            </svg>
+                                        </th>
+                                        <th scope="col">
+                                            <svg class="feather">
+                                                <use xlink:href="feather_icon/feather-sprite.svg#globe" />
+                                            </svg>
+                                        </th>
+                                        <th scope="col">
+                                            <svg class="feather">
+                                                <use xlink:href="feather_icon/feather-sprite.svg#clipboard" />
+                                            </svg>
+                                        </th>
+                                        <th scope="col">
+                                            <svg class="feather">
+                                                <use xlink:href="feather_icon/feather-sprite.svg#user-x" />
+                                            </svg>
+                                        </th>
+                                        <th scope="col">
+                                            <svg class="feather">
+                                                <use xlink:href="feather_icon/feather-sprite.svg#alert-circle" />
+                                            </svg>
+                                        </th>
+                                        <th scope="col">
+                                            <svg class="feather">
+                                                <use xlink:href="feather_icon/feather-sprite.svg#refresh-cw" />
+                                            </svg>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
 
-                            </tr>
-                        </tbody>
-                    </table>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <footer class="footer mt-4 ">
+            <div class=" text-center py-3 bg-dark text-white bg-gradient-primary">© 2020 Copyright:
+                <a href="#" style="text-decoration: none;"> NOBPANAT TANYOD</a>
+            </div>
+        </footer>
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
