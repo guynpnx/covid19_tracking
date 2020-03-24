@@ -3,8 +3,8 @@ let total_recovered = document.getElementById('total_recovered');
 let new_cases = document.getElementById('new_cases');
 let new_deaths = document.getElementById('new_deaths');
 let total_deaths = document.getElementById('total_deaths');
-let statistic_taken_at = document.getElementById('statistic_taken_at');
 let tbody = document.getElementById("countries_stat");
+let test = document.getElementById("test");
 //  world_total_stat
 fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php", {
 	"method": "GET",
@@ -20,7 +20,6 @@ fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php", {
     new_cases.innerHTML = data.new_cases;
     new_deaths.innerHTML = data.new_deaths;
     total_deaths.innerHTML = data.total_deaths;
-    statistic_taken_at.innerHTML = data.statistic_taken_at;
 }))
 .catch(err => {
 	console.log(err);
@@ -46,6 +45,7 @@ fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.p
         let deaths = row.insertCell(3);
         let serious_critical = row.insertCell(4);
         let total_recovered = row.insertCell(5);
+
         number.innerHTML = i+1;
         country_name.innerHTML = countries_stat[i].country_name;
         cases.innerHTML = countries_stat[i].cases;

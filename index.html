@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Covid 19 Tracks</title>
-    <link rel="icon" href="/img/800px-SARS-CoV-2_without_background.png">
-    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="icon" href="img/800px-SARS-CoV-2_without_background.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <style>
         .feather {
             width: 24px;
@@ -23,10 +23,13 @@
 
 <body>
     <div class="container mt-1">
-        <div class="sticky-top">
-            <div class="alert alert-danger" role="alert" style="opacity: 90%;">
-                <h5 class="d-flex align-items-center">COVID-19 Trackings</h5>
-            </div>
+        <div class="alert alert-danger" role="alert">
+            <h5 class="d-flex align-items-center">COVID-19 Trackings</h5>
+            <p>
+                Due to the current situation of the colonia virus epidemic (Covid-19), I created a page to track the
+                number of patients, infected people, and the dead. For the benefit of myself and others Will be aware of
+                the dangers of the virus (Covid-19)</p>
+                <p id="test"></p>
         </div>
         <div class="card mt-3">
             <div class="card-header text-center">
@@ -38,7 +41,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <svg class="feather">
-                                    <use xlink:href="/feather_icon/feather-sprite.svg#clipboard" />
+                                    <use xlink:href="feather_icon/feather-sprite.svg#clipboard" />
                                 </svg>
                             </div>
                             <div class="card-body">
@@ -53,7 +56,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <svg class="feather">
-                                    <use xlink:href="/feather_icon/feather-sprite.svg#refresh-cw" />
+                                    <use xlink:href="feather_icon/feather-sprite.svg#refresh-cw" />
                                 </svg>
                             </div>
                             <div class="card-body">
@@ -66,7 +69,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <svg class="feather">
-                                    <use xlink:href="/feather_icon/feather-sprite.svg#user-plus" />
+                                    <use xlink:href="feather_icon/feather-sprite.svg#user-plus" />
                                 </svg>
                             </div>
                             <div class="card-body">
@@ -79,7 +82,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <svg class="feather">
-                                    <use xlink:href="/feather_icon/feather-sprite.svg#user-minus" />
+                                    <use xlink:href="feather_icon/feather-sprite.svg#user-minus" />
                                 </svg>
                             </div>
                             <div class="card-body">
@@ -92,7 +95,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <svg class="feather">
-                                    <use xlink:href="/feather_icon/feather-sprite.svg#user-x" />
+                                    <use xlink:href="feather_icon/feather-sprite.svg#user-x" />
                                 </svg>
                             </div>
                             <div class="card-body">
@@ -102,7 +105,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-muted mt-3 float-right"><h6># <span id="statistic_taken_at"></span></h6></div>
             </div>
         </div>
         <div class="card mt-3">
@@ -113,32 +115,32 @@
                 <div class="card-subtitle">
                     <h6>
                         <svg class="feather" style="width:15px;">
-                            <use xlink:href="/feather_icon/feather-sprite.svg#hash" />
+                            <use xlink:href="feather_icon/feather-sprite.svg#hash" />
                         </svg> <span>top</span>
                     </h6>
                     <h6>
                         <svg class="feather" style="width:15px;">
-                            <use xlink:href="/feather_icon/feather-sprite.svg#globe" />
+                            <use xlink:href="feather_icon/feather-sprite.svg#globe" />
                         </svg> <span>country name</span>
                     </h6>
                     <h6>
                         <svg class="feather" style="width:15px;">
-                            <use xlink:href="/feather_icon/feather-sprite.svg#clipboard" />
+                            <use xlink:href="feather_icon/feather-sprite.svg#clipboard" />
                         </svg> <span>cases</span>
                     </h6>
                     <h6>
                         <svg class="feather" style="width:15px;">
-                            <use xlink:href="/feather_icon/feather-sprite.svg#user-x" />
+                            <use xlink:href="feather_icon/feather-sprite.svg#user-x" />
                         </svg> <span>deaths</span>
                     </h6>
                     <h6>
                         <svg class="feather" style="width:15px;">
-                            <use xlink:href="/feather_icon/feather-sprite.svg#alert-circle" />
+                            <use xlink:href="feather_icon/feather-sprite.svg#alert-circle" />
                         </svg> <span>serious critical</span>
                     </h6>
                     <h6>
                         <svg class="feather" style="width:15px;">
-                            <use xlink:href="/feather_icon/feather-sprite.svg#refresh-cw" />
+                            <use xlink:href="feather_icon/feather-sprite.svg#refresh-cw" />
                         </svg> <span>total recovered</span>
                     </h6>
                 </div>
@@ -149,32 +151,32 @@
                             <tr>
                                 <th scope="col">
                                     <svg class="feather">
-                                        <use xlink:href="/feather_icon/feather-sprite.svg#hash" />
+                                        <use xlink:href="feather_icon/feather-sprite.svg#hash" />
                                     </svg>
                                 </th>
                                 <th scope="col">
                                     <svg class="feather">
-                                        <use xlink:href="/feather_icon/feather-sprite.svg#globe" />
+                                        <use xlink:href="feather_icon/feather-sprite.svg#globe" />
                                     </svg>
                                 </th>
                                 <th scope="col">
                                     <svg class="feather">
-                                        <use xlink:href="/feather_icon/feather-sprite.svg#clipboard" />
+                                        <use xlink:href="feather_icon/feather-sprite.svg#clipboard" />
                                     </svg>
                                 </th>
                                 <th scope="col">
                                     <svg class="feather">
-                                        <use xlink:href="/feather_icon/feather-sprite.svg#user-x" />
+                                        <use xlink:href="feather_icon/feather-sprite.svg#user-x" />
                                     </svg>
                                 </th>
                                 <th scope="col">
                                     <svg class="feather">
-                                        <use xlink:href="/feather_icon/feather-sprite.svg#alert-circle" />
+                                        <use xlink:href="feather_icon/feather-sprite.svg#alert-circle" />
                                     </svg>
                                 </th>
                                 <th scope="col">
                                     <svg class="feather">
-                                        <use xlink:href="/feather_icon/feather-sprite.svg#refresh-cw" />
+                                        <use xlink:href="feather_icon/feather-sprite.svg#refresh-cw" />
                                     </svg>
                                 </th>
                             </tr>
@@ -189,9 +191,9 @@
             </div>
         </div>
     </div>
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap.js"></script>
-    <script src="/script.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
