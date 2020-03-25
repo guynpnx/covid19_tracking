@@ -63,6 +63,8 @@ fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.p
             total_recovered.innerHTML = countries_stat[i].total_recovered;
             total_recovered.style.color = "#27AE60";
 
+            
+
             x.push(countries_stat[i].country_name);
         }
 
