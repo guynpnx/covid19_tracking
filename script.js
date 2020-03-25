@@ -5,6 +5,7 @@ let new_deaths = document.getElementById('new_deaths');
 let total_deaths = document.getElementById('total_deaths');
 let tbody = document.getElementById("countries_stat");
 let test = document.getElementById("test");
+let time_update = document.getElementById("time_update");
 
 //  world_total_stat
 fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php", {
@@ -21,6 +22,9 @@ fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php", {
         new_cases.innerHTML = data.new_cases;
         new_deaths.innerHTML = data.new_deaths;
         total_deaths.innerHTML = data.total_deaths;
+        time_update.innerHTML = data.statistic_taken_at+" GMT";
+        
+
     }))
     .catch(err => {
         console.log(err);
