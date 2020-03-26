@@ -48,10 +48,25 @@
         input[type=text]:focus {
             width: 100%;
         }
+        .back-top{
+            position: fixed;
+            right: 40px;
+            bottom: 20px;
+        }
+        a .feather{
+            width: 60px;
+            height: 60px;
+            color: #CACFD2;
+        }
+        a .feather:hover{
+            width: 60px;
+            height: 60px;
+            color: gray;
+        }
     </style>
 </head>
 
-<body>
+<body id="top">
     <div class="container mt-3">
         <div class="alert alert-danger" role="alert">
             <h5 class="d-flex align-items-center">COVID-19 Trackings</h5>
@@ -248,15 +263,42 @@
             </div>
         </div>
         <footer class="footer mt-3">
-            <div class="text-center p-5 bg-dark text-white bg-gradient-primary">© 2020 Copyright 
+            <div class="text-center p-5 bg-dark text-white bg-gradient-primary">© 2020 Copyright
                 <a href="#" style="text-decoration: none;"> NOBPANAT TANYOD</a>
             </div>
         </footer>
+        <div class="back-top">
+            <a href="#top" title="back-to-top">
+                <svg class="feather">
+                    <use xlink:href="feather_icon/feather-sprite.svg#arrow-up-circle" />
+                </svg>
+            </a>
+        </div>
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="script.js"></script>
+    <script>
+        $().ready(function(){
+            $(".back-top").hide();
+            $(function(){
+                $(window).scroll(function(){
+                    if($(this).scrollTop() > 700){
+                        $(".back-top").fadeIn();
+                    }else{
+                        $(".back-top").fadeOut();
+                    }
+                });
+            });
+        });
+        $('.back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 1100);
+			return false;
+		});
+    </script>
 </body>
 
 </html>
