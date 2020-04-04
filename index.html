@@ -9,16 +9,8 @@
     <link rel="icon" href="img/800px-SARS-CoV-2_without_background.png">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="feather_icon/feather.min.js"></script>
     <style>
-        .feather {
-            width: 24px;
-            height: 24px;
-            stroke: currentColor;
-            stroke-width: 2;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            fill: none;
-        }
 
         .cbc {
             text-decoration: none;
@@ -86,9 +78,7 @@
                     <div class="col" style="color: #34495E;">
                         <div class="card">
                             <div class="card-header">
-                                <svg class="feather">
-                                    <use xlink:href="feather_icon/feather-sprite.svg#clipboard" />
-                                </svg>
+                                <i data-feather="clipboard"></i>
                             </div>
                             <div class="card-body">
                                 <h6 class="card-title">Total Cases</h6>
@@ -101,9 +91,7 @@
                     <div class="col-6 col-lg-3 col-md-6 mt-3" style="color: #2ECC71;">
                         <div class="card">
                             <div class="card-header">
-                                <svg class="feather">
-                                    <use xlink:href="feather_icon/feather-sprite.svg#refresh-cw" />
-                                </svg>
+                                <i data-feather="refresh-cw"></i>
                             </div>
                             <div class="card-body">
                                 <h6 class="card-title">Total Recovered</h6>
@@ -114,9 +102,7 @@
                     <div class="col-6 col-lg-3 col-md-6 mt-3" style="color:#2980B9">
                         <div class="card">
                             <div class="card-header">
-                                <svg class="feather">
-                                    <use xlink:href="feather_icon/feather-sprite.svg#user-plus" />
-                                </svg>
+                                <i data-feather="user-plus"></i>
                             </div>
                             <div class="card-body">
                                 <h6 class="card-title">New Cases</h6>
@@ -127,9 +113,7 @@
                     <div class="col-6 col-lg-3 col-md-6 mt-3" style="color: #F1C40F;">
                         <div class="card">
                             <div class="card-header">
-                                <svg class="feather">
-                                    <use xlink:href="feather_icon/feather-sprite.svg#user-minus" />
-                                </svg>
+                                <i data-feather="user-minus"></i>
                             </div>
                             <div class="card-body">
                                 <h6 class="card-title">New Deaths</h6>
@@ -140,9 +124,7 @@
                     <div class="col-6 col-lg-3 col-md-6 mt-3" style="color: #979A9A;">
                         <div class="card">
                             <div class="card-header">
-                                <svg class="feather">
-                                    <use xlink:href="feather_icon/feather-sprite.svg#user-x" />
-                                </svg>
+                               <i data-feather="x"></i>
                             </div>
                             <div class="card-body">
                                 <h6 class="card-title">Total Deaths</h6>
@@ -155,9 +137,7 @@
         </div>
         <div class="mt-3 d-flex justify-content-end">
             <div class="p-2 bd-highlight align-self-center" style="background-color:whitesmoke;">
-                <svg class="feather">
-                    <use xlink:href="feather_icon/feather-sprite.svg#clock" />
-                </svg> <span id="time_update"></span>
+                <i data-feather="clock"> </i><span id="time_update"></span>
             </div>
         </div>
         <div class="accordion mt-3 " id="accordionExample">
@@ -181,34 +161,22 @@
                                 data-parent="#accordionExampl">
                                 <div class="card-subtitle">
                                     <h6>
-                                        <svg class="feather" style="width:15px;">
-                                            <use xlink:href="feather_icon/feather-sprite.svg#hash" />
-                                        </svg> <span>top</span>
+                                        <i data-feather="hash"></i> <span>top</span>
                                     </h6>
                                     <h6>
-                                        <svg class="feather" style="width:15px;">
-                                            <use xlink:href="feather_icon/feather-sprite.svg#globe" />
-                                        </svg> <span>country name</span>
+                                        <i data-feather="globe"></i> <span>country name</span>
                                     </h6>
                                     <h6>
-                                        <svg class="feather" style="width:15px;">
-                                            <use xlink:href="feather_icon/feather-sprite.svg#clipboard" />
-                                        </svg> <span>cases</span>
+                                        <i data-feather="clipboard"></i> <span>cases</span>
                                     </h6>
                                     <h6>
-                                        <svg class="feather" style="width:15px;">
-                                            <use xlink:href="feather_icon/feather-sprite.svg#user-x" />
-                                        </svg> <span>deaths</span>
+                                        <i data-feather="user-x"></i> <span>deaths</span>
                                     </h6>
                                     <h6>
-                                        <svg class="feather" style="width:15px;">
-                                            <use xlink:href="feather_icon/feather-sprite.svg#alert-circle" />
-                                        </svg> <span>serious critical</span>
+                                        <i data-feather="alert-circle"></i> <span>serious critical</span>
                                     </h6>
                                     <h6>
-                                        <svg class="feather" style="width:15px;">
-                                            <use xlink:href="feather_icon/feather-sprite.svg#refresh-cw" />
-                                        </svg> <span>total recovered</span>
+                                        <i data-feather="refresh-cw"></i> <span>total recovered</span>
                                     </h6>
                                 </div>
                             </div>
@@ -220,34 +188,22 @@
                                 <thead style="background-color: whitesmoke;">
                                     <tr>
                                         <th scope="col">
-                                            <svg class="feather">
-                                                <use xlink:href="feather_icon/feather-sprite.svg#hash" />
-                                            </svg>
+                                            <i data-feather="hash"></i>
                                         </th>
                                         <th scope="col">
-                                            <svg class="feather">
-                                                <use xlink:href="feather_icon/feather-sprite.svg#globe" />
-                                            </svg>
+                                            <i data-feather="globe"></i>
                                         </th>
                                         <th scope="col">
-                                            <svg class="feather">
-                                                <use xlink:href="feather_icon/feather-sprite.svg#clipboard" />
-                                            </svg>
+                                            <i data-feather="clipboard"></i>
                                         </th>
                                         <th scope="col">
-                                            <svg class="feather">
-                                                <use xlink:href="feather_icon/feather-sprite.svg#user-x" />
-                                            </svg>
+                                            <i data-feather="user-x"></i>
                                         </th>
                                         <th scope="col">
-                                            <svg class="feather">
-                                                <use xlink:href="feather_icon/feather-sprite.svg#alert-circle" />
-                                            </svg>
+                                            <i data-feather="alert-circle"></i>
                                         </th>
                                         <th scope="col">
-                                            <svg class="feather">
-                                                <use xlink:href="feather_icon/feather-sprite.svg#refresh-cw" />
-                                            </svg>
+                                            <i data-feather="refresh-cw"></i>
                                         </th>
                                     </tr>
                                 </thead>
@@ -280,6 +236,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="script.js"></script>
     <script>
+        feather.replace();
         $().ready(function(){
             $(".back-top").hide();
             $(function(){

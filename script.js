@@ -41,7 +41,6 @@ fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.p
 })
     .then(response => response.json().then(data => {
         let countries_stat = data.countries_stat;
-        var x = [];
         for (let i = 0; i < countries_stat.length; i++) {
             // console.log(countries_stat[i]);
             let row = tbody.insertRow(1 + i);
@@ -62,15 +61,7 @@ fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.p
             serious_critical.style.color = "#B7950B";
             total_recovered.innerHTML = countries_stat[i].total_recovered;
             total_recovered.style.color = "#27AE60";
-
-            
-
-            x.push(countries_stat[i].country_name);
         }
-
-        $("#search").autocomplete({
-            source:x
-        });
     }))
     .catch(err => {
         console.log(err);
